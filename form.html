@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Event</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="form.html">Book Event</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Event Registration Form</h2>
+      <form id="eventForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="event">Select Event:</label>
+        <select id="event" name="event">
+          <option value="concert">Music Concert</option>
+          <option value="workshop">Web Development Workshop</option></select
+        ><br /><br />
+
+        <label for="preference">Event Preference:</label>
+        <input type="radio" id="virtual" name="preference" value="virtual" />
+        <label for="virtual">Virtual</label>
+        <input type="radio" id="inperson" name="preference" value="inperson" />
+        <label for="inperson">In-Person</label><br /><br />
+
+        <label for="addons">Add-ons:</label>
+        <input type="checkbox" id="vip" name="addons" value="vip" />
+        <label for="vip">VIP Package</label>
+        <input type="checkbox" id="merch" name="addons" value="merch" />
+        <label for="merch">Merchandise</label><br /><br />
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" /><br /><br />
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments"></textarea><br /><br />
+
+        <label for="file">Upload File (optional):</label>
+        <input type="file" id="file" name="file" /><br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
